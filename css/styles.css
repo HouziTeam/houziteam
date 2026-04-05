@@ -60,9 +60,10 @@ a { text-decoration: none; color: inherit; }
   top: 0;
   z-index: 999;
 }
+
 .nav-logo-img {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -75,7 +76,9 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
+
 .nav-logo-icon {
   width: 32px; height: 32px;
   border: 2px solid var(--accent);
