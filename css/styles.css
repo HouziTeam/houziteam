@@ -87,7 +87,7 @@ a {
 .nav-logo {
   font-family: var(--font-head);
   font-weight: 900;
-  font-size: 32px;
+  font-size: 50px;
   color: #fff;
   letter-spacing: 0.1em;
   display: flex;
@@ -96,8 +96,8 @@ a {
 }
 
 .nav-logo-img {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: auto;
   object-fit: contain;
 }
 
