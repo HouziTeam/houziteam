@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOUZI TEAM – Robótica de Competencia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ══════════════ TOPBAR ══════════════ -->
+  <div class="topbar">
+    <span class="topbar-left">▲ ENVÍOS A TODO COLOMBIA · WHATSAPP: +57 300 000 0000</span>
+    <div class="topbar-right">
+      <a href="#">Mi cuenta</a>
+      <a href="#">Rastrear pedido</a>
+      <a href="#">Blog</a>
+    </div>
+  </div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 18 18" fill="none" stroke="#00c8ff" stroke-width="1.8">
+          <rect x="2" y="5" width="14" height="9" rx="2"/>
+          <path d="M6 5V3.5M12 5V3.5M5 10h1M9 10h1M13 10h1"/>
+          <circle cx="9" cy="14.5" r="1"/>
+        </svg>
+      </div>
+      <span>HOUZI <em>TEAM</em></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#" class="nav-link active">Tienda</a>
+      <a href="#" class="nav-link">Robots</a>
+      <a href="#" class="nav-link">Sensores</a>
+      <a href="#" class="nav-link">Motores</a>
+      <a href="#" class="nav-link">Eventos</a>
+      <a href="#" class="nav-link">Tutoriales</a>
+      <a href="#" class="nav-link">Nosotros</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="btn-icon" title="Buscar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+      <button class="btn-cart">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+        </svg>
+        Carrito <span class="cart-count">0</span>
+      </button>
+      <button class="btn-hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">// Robótica de Competencia</div>
+      <h1>Construye el<br>robot <em>ganador</em><br>que imaginas</h1>
+      <p>Componentes electrónicos, robots de competencia, sensores y herramientas para llevar tus proyectos al siguiente nivel.</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn-primary">Ver catálogo →</a>
+        <a href="#eventos" class="btn-secondary">Próximos eventos</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-val">500+</span><span class="stat-lbl">Productos</span></div>
+      <div class="stat"><span class="stat-val">12</span><span class="stat-lbl">Marcas</span></div>
+      <div class="stat"><span class="stat-val">24h</span><span class="stat-lbl">Despacho</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <span>Arduino<b>◆</b></span><span>Pololu<b>◆</b></span><span>Jsumo<b>◆</b></span>
+      <span>Fingertech<b>◆</b></span><span>Raspberry Pi<b>◆</b></span><span>Sumozade<b>◆</b></span>
+      <span>LiPo Batteries<b>◆</b></span><span>Micro:Bit<b>◆</b></span><span>ESP32<b>◆</b></span>
+      <span>Arduino<b>◆</b></span><span>Pololu<b>◆</b></span><span>Jsumo<b>◆</b></span>
+      <span>Fingertech<b>◆</b></span><span>Raspberry Pi<b>◆</b></span><span>Sumozade<b>◆</b></span>
+      <span>LiPo Batteries<b>◆</b></span><span>Micro:Bit<b>◆</b></span><span>ESP32<b>◆</b></span>
+    </div>
+  </div>
+
+  <!-- ══════════════ CATEGORÍAS ══════════════ -->
+  <section class="section" id="categorias">
+    <div class="section-header">
+      <h2 class="section-title">Categorías <em>principales</em></h2>
+      <a href="#" class="section-link">Ver todas →</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card" style="--accent:#00c8ff">
+        <div class="cat-icon">🤖</div>
+        <div class="cat-name">Robots de Competencia</div>
+        <div class="cat-count">48 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#ff8c44">
+        <div class="cat-icon">⚡</div>
+        <div class="cat-name">Motores & Actuadores</div>
+        <div class="cat-count">92 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#44ff88">
+        <div class="cat-icon">📡</div>
+        <div class="cat-name">Sensores</div>
+        <div class="cat-count">130 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#c844ff">
+        <div class="cat-icon">🔋</div>
+        <div class="cat-name">Baterías LiPo</div>
+        <div class="cat-count">35 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#00c8ff">
+        <div class="cat-icon">🧩</div>
+        <div class="cat-name">Tarjetas de Desarrollo</div>
+        <div class="cat-count">67 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#ff8c44">
+        <div class="cat-icon">🔧</div>
+        <div class="cat-name">Herramientas</div>
+        <div class="cat-count">84 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#44ff88">
+        <div class="cat-icon">📟</div>
+        <div class="cat-name">Componentes SMD</div>
+        <div class="cat-count">210 productos</div>
+      </div>
+      <div class="cat-card" style="--accent:#c844ff">
+        <div class="cat-icon">📶</div>
+        <div class="cat-name">Comunicación</div>
+        <div class="cat-count">41 productos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PRODUCTOS ══════════════ -->
+  <section class="section" id="productos">
+    <div class="section-header">
+      <h2 class="section-title">Productos <em>destacados</em></h2>
+      <a href="#" class="section-link">Ver catálogo completo →</a>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">🤖</div>
+        <div class="prod-body">
+          <span class="prod-tag">Minisumo</span>
+          <div class="prod-name">Robot Minisumo Starter Kit</div>
+          <div class="prod-footer">
+            <span class="prod-price">$185.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">⚡</div>
+        <div class="prod-body">
+          <span class="prod-tag">Motor</span>
+          <div class="prod-name">Motorreductor HP 1000 RPM 6V</div>
+          <div class="prod-footer">
+            <span class="prod-price">$42.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">📡</div>
+        <div class="prod-body">
+          <span class="prod-tag">Sensor</span>
+          <div class="prod-name">Sensor IR Sharp GP2Y0A21</div>
+          <div class="prod-footer">
+            <span class="prod-price">$28.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🔋</div>
+        <div class="prod-body">
+          <span class="prod-tag">Energía</span>
+          <div class="prod-name">Batería LiPo 3S 1300mAh 30C</div>
+          <div class="prod-footer">
+            <span class="prod-price">$95.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🧩</div>
+        <div class="prod-body">
+          <span class="prod-tag">Arduino</span>
+          <div class="prod-name">Arduino Mega 2560 R3 Original</div>
+          <div class="prod-footer">
+            <span class="prod-price">$120.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">📶</div>
+        <div class="prod-body">
+          <span class="prod-tag">WiFi</span>
+          <div class="prod-name">Módulo ESP32 DevKit V1</div>
+          <div class="prod-footer">
+            <span class="prod-price">$35.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🔧</div>
+        <div class="prod-body">
+          <span class="prod-tag">Herramienta</span>
+          <div class="prod-name">Estación de Soldadura 60W</div>
+          <div class="prod-footer">
+            <span class="prod-price">$75.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">🎮</div>
+        <div class="prod-body">
+          <span class="prod-tag">Control</span>
+          <div class="prod-name">Receptor Radio Control 2.4GHz</div>
+          <div class="prod-footer">
+            <span class="prod-price">$55.000</span>
+            <button class="prod-add" onclick="addToCart(this)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ EVENTOS ══════════════ -->
+  <section class="events-section" id="eventos">
+    <div class="section-header">
+      <h2 class="section-title">Eventos de <em>Robótica</em></h2>
+      <a href="#" class="section-link">Ver todos →</a>
+    </div>
+    <div class="event-list">
+      <div class="event-item">
+        <div class="event-date">
+          <span class="event-day">18</span>
+          <span class="event-mon">ABR</span>
+        </div>
+        <div class="event-info">
+          <div class="event-name">Robot Challenge Colombia 2026</div>
+          <div class="event-loc">📍 Bogotá, Centro de Convenciones · Sumo, Minisumo, Seguidor de Línea</div>
+        </div>
+        <div class="event-badge upcoming">PRÓXIMO</div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">
+          <span class="event-day">07</span>
+          <span class="event-mon">JUN</span>
+        </div>
+        <div class="event-info">
+          <div class="event-name">Copa Nacional de Robótica Escolar</div>
+          <div class="event-loc">📍 Medellín, Parque Explora · Laberinto, Batalla de Robots</div>
+        </div>
+        <div class="event-badge open">INSCRIPCIONES ABIERTAS</div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">
+          <span class="event-day">15</span>
+          <span class="event-mon">AGO</span>
+        </div>
+        <div class="event-info">
+          <div class="event-name">Torneo Interuniversitario de Robótica</div>
+          <div class="event-loc">📍 Cali, Universidad del Valle · Sumo, Drones, Seguidor</div>
+        </div>
+        <div class="event-badge soon">PRÓXIMAMENTE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">HOUZI <em>TEAM</em></div>
+        <p>Tu aliado en robótica de competencia. Componentes seleccionados, envíos a todo Colombia y soporte técnico especializado.</p>
+        <div class="footer-socials">
+          <a href="#" class="social">ig</a>
+          <a href="#" class="social">yt</a>
+          <a href="#" class="social">tk</a>
+          <a href="#" class="social">fb</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="#">Robots</a><a href="#">Motores</a><a href="#">Sensores</a>
+        <a href="#">Baterías</a><a href="#">Herramientas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Información</h4>
+        <a href="#">Sobre Nosotros</a><a href="#">Tutoriales</a>
+        <a href="#">Eventos</a><a href="#">Blog</a><a href="#">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="#">📱 WhatsApp</a>
+        <a href="#">✉️ ventas@houziteam.com</a>
+        <a href="#">📍 Colombia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HOUZI TEAM · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
